@@ -1,0 +1,131 @@
+{
+  "properties": {
+    "title": "Oblique Viewer Sample"
+  },
+  "load": {
+    "bundleLocations": [
+      "localbundles",
+      "bundles"
+    ],
+    "allowedBundles": [
+      "system",
+      "templatelayout",
+      "template-seasons",
+      "theme-everlasting",
+      "map-init",
+      "notifier",
+      "banner",
+      "dn_obliqueview"
+    ]
+  },
+  "bundles": {
+    "dn_obliqueview": {
+      "ObliqueWidgetFactory": {
+        "north": "blickrichtungnord1",
+        "east": "blickrichtungost1",
+        "south": "blickrichtungsued1",
+        "west": "blickrichtungwest1",
+        "animateRotation": true
+      }
+    },
+    "banner": {
+      "BannerWidget": {
+        "label": "Developer Network",
+        "image": "https://www.conterra.de/~/media/conterra/images/site_logos/conterra-logo.ashx",
+        "imagePosition": "above",
+        "link": "http://developernetwork.conterra.de"
+      }
+    },
+    "map-init": {
+      "Config": {
+        "map": {
+          "basemap": [
+            {
+              "url": "https://geoservice.bochum.de/arcgis/rest/services/Internet/Luftbild2014/MapServer",
+              "type": "AGS_TILED",
+              "id": "luftbild014",
+              "title": "Luftbild2014",
+              "description": "Luftbild 2014 © Aero West",
+              "visible": true,
+              "sublayers": [
+                {
+                  "id": "0",
+                  "title": "Luftbild2014"
+                }
+              ]
+            }
+          ],
+          "layers": [
+            {
+              "url": "https://geoservice.bochum.de/arcgis/rest/services/Internet/Luftbild2014_Nord/MapServer",
+              "type": "AGS_TILED",
+              "id": "blickrichtungnord1",
+              "title": "Blickrichtung Nord",
+              "description": "Luftbild 2014 © Aero West",
+              "visible": false,
+              "sublayers": [
+                {
+                  "id": "0",
+                  "title": "Schraegluftbild2014_NORD"
+                }
+              ]
+            },
+            {
+              "url": "https://geoservice.bochum.de/arcgis/rest/services/Internet/Luftbild2014_Ost/MapServer",
+              "type": "AGS_TILED",
+              "id": "blickrichtungost1",
+              "title": "Blickrichtung Ost",
+              "description": "Luftbild 2014 © Aero West",
+              "visible": false,
+              "sublayers": [
+                {
+                  "id": "0",
+                  "title": "Schraegluftbild2014_OST"
+                }
+              ]
+            },
+            {
+              "url": "https://geoservice.bochum.de/arcgis/rest/services/Internet/Luftbild2014_Sued/MapServer",
+              "type": "AGS_TILED",
+              "id": "blickrichtungsued1",
+              "title": "Blickrichtung Sued",
+              "description": "Luftbild 2014 © Aero West",
+              "visible": false,
+              "sublayers": [
+                {
+                  "id": "0",
+                  "title": "Schraegluftbild2014_SUED"
+                }
+              ]
+            },
+            {
+              "url": "https://geoservice.bochum.de/arcgis/rest/services/Internet/Luftbild2014_West/MapServer",
+              "type": "AGS_TILED",
+              "id": "blickrichtungwest1",
+              "title": "Blickrichtung West",
+              "description": "Luftbild 2014 © Aero West",
+              "visible": false,
+              "sublayers": [
+                {
+                  "id": "0",
+                  "title": "Schraegluftbild2014_WEST"
+                }
+              ]
+            }
+          ]
+        },
+        "view": {
+          "viewmode": "2D",
+          "zoom": 15,
+          "extent": {
+            "xmin": 374459.15765057935,
+            "xmax": 377845.8310905938,
+            "ymin": 5703831.999847235,
+            "ymax": 5706001.587519744,
+            "spatialReference": 25832
+          }
+        }
+      }
+    }
+  }
+}

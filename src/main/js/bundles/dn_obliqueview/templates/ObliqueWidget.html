@@ -1,0 +1,16 @@
+<div>
+    <div data-dojo-type="dijit/layout/BorderContainer" data-dojo-props="gutters: false"  data-dojo-attach-point="_container" class="_obliqueBoarderContainer">
+        <div data-dojo-attach-point="_leftNode" class="noPadding" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'left'">
+            <span data-dojo-attach-point="_rightArrowNode" class="obliqueRotationIcon icon-redo dijitInline" data-dojo-attach-event="onClick:_rotateLeft"></span>
+        </div>
+        <div  data-dojo-attach-point="_centerNode" class="noPadding align-center" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'center'">
+            <span data-dojo-attach-point="_compassNode" class="obliqueCompassIcon esri-icon-compass dijitInline" data-dojo-attach-event="onClick:_resetOrientation"></span>
+        </div>
+        <div  data-dojo-attach-point="_rightNode" class="noPadding" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'right'">
+            <span data-dojo-attach-point="_leftArrowNode" class="obliqueRotationIcon icon-undo dijitInline" data-dojo-attach-event="onClick:_rotateRight"></span>
+        </div>
+        <div  data-dojo-attach-point="_bottomNode" class="noHorizontalPadding align-center" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region: 'bottom'">
+            <span data-dojo-attach-point="_stopObliqueNode" class="obliqueStopButton icons-oblique-aerial-oblique padding-default" data-dojo-attach-event="onClick:_toggleObliqueView"></span>
+        </div>
+    </div>
+</div>

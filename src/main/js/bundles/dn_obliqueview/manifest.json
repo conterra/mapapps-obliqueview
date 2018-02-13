@@ -1,0 +1,67 @@
+{
+  "name": "dn_obliqueview",
+  "version": "1.0.0-SNAPSHOT",
+  "title": "${bundleName}",
+  "description": "${bundleDescription}",
+  "vendor": "con terra GmbH",
+  "productName": "devnet-mapapps-obliqueview",
+  "CSS-Themes-Extension": [
+    {
+      "name": "*",
+      "files": [
+        "./styles/styles.css"
+      ]
+    }
+  ],
+  "layout-widgets": [
+    {
+      "role": "obliqueviewWidget",
+      "attachTo": "map_topright"
+    }
+  ],
+  "components": [
+    {
+      "name": "ObliqueWidgetFactory",
+      "provides": [
+        "dijit.Widget",
+        "ct.framework.api.EventHandler"
+      ],
+      "properties": {
+        "widgetRole": "obliqueviewWidget",
+        "north": "",
+        "east": "",
+        "south": "",
+        "west": "",
+        "animateRotation": true
+      },
+      "instanceFactory": true,
+      "immediate": true,
+      "references": [
+        {
+          "name": "_windowManager",
+          "providing": "ct.framework.api.WindowManager"
+        },
+        {
+          "name": "_mapModel",
+          "providing": "map-widget.MapWidgetModel"
+        }
+      ]
+    },
+    {
+      "name": "${toolName}",
+      "impl": "ct/tools/Tool",
+      "provides": [
+        "ct.tools.Tool"
+      ],
+      "propertiesConstructor": true,
+      "properties": {
+        "id": "obliqueviewTool",
+        "toolRole": "toolset",
+        "title": "${toolName}",
+        "tooltip": "${toolTooltip}",
+        "togglable": true,
+        "iconClass": "icon-add-symbol"
+      }
+    }
+  ]
+}

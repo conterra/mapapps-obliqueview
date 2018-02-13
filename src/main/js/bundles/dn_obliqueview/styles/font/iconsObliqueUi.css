@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'iconsObliqueUI';
+    src:
+        url('iconsObliqueUI.ttf?2r6s9n') format('truetype'),
+        url('iconsObliqueUI.woff?2r6s9n') format('woff'),
+        url('iconsObliqueUI.svg?2r6s9n#iconsObliqueUI') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.icons-oblique-house-straight,
+.icons-oblique-house-oblique,
+.icons-oblique-aerial-oblique,
+.icons-oblique-aerial-straight {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'iconsObliqueUI' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icons-oblique-house-straight:before {
+    content: "\e900";
+}
+.icons-oblique-house-oblique:before {
+    content: "\e901";
+}
+.icons-oblique-aerial-oblique:before {
+  content: "\e902";
+}
+.icons-oblique-aerial-straight:before {
+  content: "\e903";
+}

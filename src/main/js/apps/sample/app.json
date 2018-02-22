@@ -15,6 +15,8 @@
       "map-init",
       "notifier",
       "banner",
+      "toolset",
+      "mapnavigation",
       "dn_obliqueview"
     ]
   },
@@ -125,6 +127,27 @@
             "spatialReference": 25832
           }
         }
+      }
+    },
+    "toolset": {
+      "ToolsetManager": {
+        "toolsets": [
+          {
+            "id": "mapview_tools",
+            "tools": [
+              "zoomInTool",
+              "zoomOutTool",
+              "compassTool",
+              "restoreInitialViewTool"
+            ],
+            "registerWidget": {
+              "widgetRole": "mapview_tools"
+            },
+            "container": "ignore",
+            "windowType": "container",
+            "cssClass": "muted"
+          }
+        ]
       }
     }
   }

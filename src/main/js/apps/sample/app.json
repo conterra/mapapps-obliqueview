@@ -48,13 +48,7 @@
               "id": "luftbild014",
               "title": "Luftbild2014",
               "description": "Luftbild 2014 © Aero West",
-              "visible": true,
-              "sublayers": [
-                {
-                  "id": "0",
-                  "title": "Luftbild2014"
-                }
-              ]
+              "visible": true
             }
           ],
           "layers": [
@@ -64,13 +58,7 @@
               "id": "blickrichtungnord1",
               "title": "Blickrichtung Nord",
               "description": "Luftbild 2014 © Aero West",
-              "visible": false,
-              "sublayers": [
-                {
-                  "id": "0",
-                  "title": "Schraegluftbild2014_NORD"
-                }
-              ]
+              "visible": false
             },
             {
               "url": "https://geoservice.bochum.de/arcgis/rest/services/Internet/Luftbild2014_Ost/MapServer",
@@ -78,13 +66,7 @@
               "id": "blickrichtungost1",
               "title": "Blickrichtung Ost",
               "description": "Luftbild 2014 © Aero West",
-              "visible": false,
-              "sublayers": [
-                {
-                  "id": "0",
-                  "title": "Schraegluftbild2014_OST"
-                }
-              ]
+              "visible": false
             },
             {
               "url": "https://geoservice.bochum.de/arcgis/rest/services/Internet/Luftbild2014_Sued/MapServer",
@@ -92,13 +74,7 @@
               "id": "blickrichtungsued1",
               "title": "Blickrichtung Sued",
               "description": "Luftbild 2014 © Aero West",
-              "visible": false,
-              "sublayers": [
-                {
-                  "id": "0",
-                  "title": "Schraegluftbild2014_SUED"
-                }
-              ]
+              "visible": false
             },
             {
               "url": "https://geoservice.bochum.de/arcgis/rest/services/Internet/Luftbild2014_West/MapServer",
@@ -106,13 +82,7 @@
               "id": "blickrichtungwest1",
               "title": "Blickrichtung West",
               "description": "Luftbild 2014 © Aero West",
-              "visible": false,
-              "sublayers": [
-                {
-                  "id": "0",
-                  "title": "Schraegluftbild2014_WEST"
-                }
-              ]
+              "visible": false
             }
           ]
         },

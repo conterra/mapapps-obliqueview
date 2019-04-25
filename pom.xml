@@ -61,7 +61,10 @@
             <artifactId>ct-mapapps-proxy</artifactId>
             <scope>test</scope>
         </dependency>
-        <!-- include for vue-devtools support -->
+        <!-- include for 
+
+
+-devtools support -->
         <dependency>
             <groupId>org.vuejs</groupId>
             <artifactId>vue</artifactId>
@@ -528,9 +531,9 @@
         </plugins>
     </build>
     <scm>
-        <connection>scm:git:https://github.com/conterra/mapapps-vuetoc.git</connection>
-        <developerConnection>scm:git:https://github.com/conterra/mapapps-vuetoc.git</developerConnection>
-        <url>https://github.com/conterra/mapapps-vuetoc</url>
+        <connection>scm:git:https://github.com/conterra/mapapps-obliqueview.git</connection>
+        <developerConnection>scm:git:https://github.com/conterra/mapapps-obliqueview.git</developerConnection>
+        <url>https://github.com/conterra/mapapps-obliqueview</url>
         <tag>HEAD</tag>
     </scm>
     <distributionManagement>

@@ -1,13 +1,14 @@
 # Obliqueview Bundle
 This bundle rotates oblique views.
 
-Installation Guide
-------------------
-**Requirement: map.apps 4**
+## Sample App
+https://demos.conterra.de/mapapps/resources/apps/downloads_obliqueview/index.html
 
-#### Configurable Components of dn_obliqueview:
+## Installation Guide
+**Requirement: map.apps 4.0.0**
 
-##### 
+### Configurable Components of dn_obliqueview:
+#### ObliqueWidgetFactory
 ```
 "ObliqueWidgetFactory": {
     "north": "blickrichtungnord1",
@@ -18,13 +19,12 @@ Installation Guide
 }
 ```
 
-Development Guide
-------------------
+## Development Guide
 ### Define the mapapps remote base
 Before you can run the project you have to define the mapapps.remote.base property in the pom.xml-file:
 `<mapapps.remote.base>http://%YOURSERVER%/ct-mapapps-webapp-%VERSION%</mapapps.remote.base>`
 
-##### Other methods to to define the mapapps.remote.base property.
+### Other methods to to define the mapapps.remote.base property.
 1. Goal parameters
 `mvn install -Dmapapps.remote.base=http://%YOURSERVER%/ct-mapapps-webapp-%VERSION%`
 

@@ -1,9 +1,6 @@
 # Obliqueview Bundle
 This bundle rotates oblique views.
 
-## Sample App
-https://demos.conterra.de/mapapps/resources/apps/downloads_obliqueview/index.html
-
 ## Installation Guide
 **Requirement: map.apps 4.0.0**
 
